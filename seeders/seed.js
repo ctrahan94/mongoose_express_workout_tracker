@@ -9,11 +9,6 @@ const opts = {
 }
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", opts);
 
-// mongoose.connect("mongodb://localhost/workout", {
-//   useNewUrlParser: true,
-//   useFindAndModify: false
-// });
-
 let workoutSeed = [
   {
     day: new Date().setDate(new Date().getDate()-10),
